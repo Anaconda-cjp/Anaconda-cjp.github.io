@@ -1,0 +1,78 @@
+nav{
+    float: left;
+    width:100%;
+    height:80px;
+    background-color: rgba(0,0,0,0.7);
+
+    /*opacity: 0.7;*/
+    padding: 0 ;
+    position: relative;
+    z-index: 10;
+
+}
+*{
+    margin: 0;
+    padding:0;
+}
+nav ul {
+    float:left;
+    margin: 0px;
+    padding: 0 0 0 0;
+    width: 100%;
+    list-style: none;
+
+
+}
+/*横排*/
+nav ul li {
+    display: inline;
+
+    position: relative;
+    z-index: 10;
+}
+nav ul li a {
+    float: left;
+    width: 10%;
+    line-height: 60px;
+    border-right: snow 1px solid;
+    padding: 11px 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    background: url("../image/daohanglanhengxiang.png")        center right no-repeat;
+    /*background-image: url("../image/yekong.png");*/
+    opacity: 0.4;
+    color: #fff;
+    font-family: Tahoma;
+    outline: none;
+
+}
+nav ul li a:hover{
+    color: gold;
+    opacity: 1;
+    transition: 1.6s;
+    font-size: 36px;
+    border-top: rgba(255,255,255,0.3) 10px solid;
+}
+#log{
+
+    line-height: 60px;
+    opacity: 0.8;
+    color: gray;
+    font-size: 50px;
+    background-image: url("../image/yuanslogo.png");
+
+}
+#log:hover{
+    border-top: none;
+    transform: rotateX(360deg);
+    opacity: 1.2;
+}
+/*固定导航条*/
+header {
+    width: 100%;
+    position: fixed;
+}
+
+
+

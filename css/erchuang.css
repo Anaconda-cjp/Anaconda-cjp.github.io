@@ -1,0 +1,422 @@
+
+
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 13vw 13vw 13vw ;
+    grid-template-rows: 10vw 10vw ;
+    grid-row-gap: 0.8vh;
+    grid-column-gap: 1vw;
+    position: absolute;
+    margin: 15vh 50vw;
+
+}
+.grid>div{
+    color: #fff;
+    font-size: 50px;
+    line-height: 10vw;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+}
+#lunbotu {
+    position: absolute;
+    margin-left: 10vw;
+    width: 36vw;
+    height: 42vh;
+    margin-top: 15vh;
+    background-color: black;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 13vw 13vw 13vw 13vw ;
+    grid-column-gap: 2vw;
+    position: absolute;
+    margin: 70vh 10vw;
+    background-color: rgba(0,0,0,0);
+}
+.grid1>div{
+    color: #fff;
+    font-size: 50px;
+    line-height: 10vw;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+}
+
+#right_2 {
+    background-color: rgba(255,255,255,0.3);
+    width: 20vw;
+    height: 45vh;
+    position: absolute;
+    margin-top: 70vh;
+    margin-left: 70vw;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: 13vw 13vw 13vw 13vw ;
+    grid-column-gap: 2vw;
+    position: absolute;
+    margin: 100vh 10vw;
+}
+.grid2>div{
+    color: #fff;
+    font-size: 50px;
+    line-height: 10vw;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+}
+#grid3 {
+    margin-top: 140vh;
+    grid-template-columns: 13vw 13vw 13vw 13vw ;
+    grid-column-gap: 2vw;
+    grid-row-gap: 15vw;
+    grid-template-rows: 10vw 10vw;
+    margin-left: 10vw;
+}
+#right_3 {
+    background-color: rgba(255,255,255,0.3);
+    width: 20vw;
+    height: 90vh;
+    position: absolute;
+    margin-top: 140vh;
+    margin-left: 70vw;
+}
+
+.a1 a img{
+    width: 13vw;
+    height: 10vw;
+}
+
+/*设置视频背景*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+video{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    /*加滤镜*/
+    /*filter: blur(15px); //背景模糊设置 */
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter:grayscale(70%); //背景灰度设置*/
+    z-index:-11
+}
+source{
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+}
+.a1 a img:hover {
+   opacity: 0.3;
+    transform: rotateY(95deg);
+    transition: 2s;
+}
+.words {
+    position: absolute;
+    left: 20%;
+}
+.a1 {
+    position: relative;
+}
+#b1{
+    left: 20%;
+    font-size: 18px;
+    top: 3vw;
+}
+#b2 {
+    left: 40%;
+    font-size: 18px;
+    top: 3vw;
+}
+#b3 {
+    left: 75%;
+    font-size: 18px;
+    top: 3vw;
+}
+#b4 {
+    left: 10%;
+    font-size: 18px;
+    top: 13vw;
+}
+#b5 {
+    left: 44%;
+    font-size: 18px;
+    top: 13vw;
+}
+#b6 {
+    left: 80%;
+    font-size: 18px;
+    top: 13vw;
+}
+#c1 {
+    left: 40%;
+    font-size: 18px;
+    top: 3vw;
+}
+#c2 {
+    left: 40%;
+    font-size: 18px;
+    top: 3vw;
+}
+#c3 {
+    left: 40%;
+    font-size: 18px;
+    top: 3vw;
+}
+#c4 {
+    left: 40%;
+    font-size: 18px;
+    top: 3vw;
+}
+#d1 {
+    left: 35%;
+
+    font-size: 18px;
+    top: 3vw;
+}
+#d2 {
+    left: 30%;
+    font-size: 18px;
+    top: 3vw;
+}
+#d3 {
+    left: 30%;
+    font-size: 18px;
+    top: 3vw;
+}
+#d4 {
+    left: 30%;
+    font-size: 18px;
+    top: 3vw;
+}
+.words {
+    font-weight: bold;
+}
+#grid3 div img{
+    width: 13vw;
+    height: 20vw;
+    box-shadow: white 0 0 50px;
+
+}
+#grid3 div img:hover{
+    transform: rotateY(365deg);
+    transition: 2s;
+    box-shadow: gold 0 0 50px;
+}
+.a1 {
+    border-top: 2px white solid;
+}
+
+/*同人图片右侧*/
+#right_3 ul{
+    list-style: none;
+}
+#right_3 ul li {
+    width: 20vw;
+    height: 5vh;
+    background:linear-gradient(30deg, rgba(255,215,0,0.5),rgba(255,255,255,0.5) );
+    margin-top: 2vh;
+    line-height: 5vh;
+}
+a {
+    text-decoration: none;
+}
+#right_3 ul li a {
+    font-size: 24px;
+    margin-left: 2vw;
+    color: white;
+}
+#right_3 ul li a:hover {
+    transition: 1s;
+    font-size: 25px;
+    color: aquamarine;
+
+    background:linear-gradient(30deg, rgba(255,215,0,0.8),rgba(255,255,255,0.8) );
+}
+/*视频推荐右侧*/
+#right_2 ul li a {
+    font-size: 24px;
+    margin-left: 2vw;
+    color: white;
+}
+#right_2 ul li a:hover {
+    transition: 1s;
+    font-size: 30px;
+    color: aquamarine;
+    background:linear-gradient(30deg, rgba(255,215,0,0.8),rgba(255,255,255,0.8) );
+}
+#right_2 ul{
+    list-style: none;
+}
+#right_2 ul li {
+    width: 20vw;
+    height: 5vh;
+    background:linear-gradient(30deg, rgba(255,215,0,0.5),rgba(255,255,255,0.5) );
+    margin-top: 2vh;
+    line-height: 5vh;
+}
+
+
+/*设置adv属性*/
+#adv {
+    margin-left:10vw;
+    width: 36vw;
+    height: 42vh;
+    background-image: url("../tongrenimg/lunbo4.jpg");
+    background-size: 36vw 42vh;
+    animation: lunbo 10s linear infinite;/*后面linear是匀速，而infinite是循环动画*/
+    position: absolute;
+    margin-top: 17vh;
+    /*index3新增*/
+    margin-bottom: 10px;
+    box-shadow: white 0 0 30px;
+}
+
+
+
+#adv ul {
+    padding-left: 14vw;
+    padding-top: 28vh;
+    height: 28px;
+    width: 10vw;
+    list-style-type: none;
+}
+#adv ul li {
+
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-top: 7vh;
+    margin-left: 1vh;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    color:white;
+    border-radius: 30px;
+    z-index: 11;
+    list-style-type: none;
+}
+#adv ul li  :hover  {
+    background-color: white;
+}
+#adv ul li:hover  div {
+    width:  36vw;
+    height: 42vh;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /*background-size: 36vw 42vh;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+#adv ul li.lunbo1:hover div {
+    background-image: url("../tongrenimg/lunbo1.jpg");
+    background-size: 100% 100%;
+}
+#adv ul li.lunbo2:hover div {
+
+    background-image: url("../tongrenimg/lunbo2.jpg");
+    background-size: 100% 100%;
+}
+#adv ul li.lunbo3:hover div {
+    background-image: url("../tongrenimg/lunbo3.jpg");
+    background-size: 100% 100%;
+}
+#adv ul li.lunbo4:hover div {
+    background-image: url("../tongrenimg/lunbo4.jpg");
+    background-size: 100% 100%;
+
+}
+
+#adv ul li span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    color:white;
+    border-radius: 30px;
+    position: relative;
+    z-index: 100;
+
+}
+#adv ul li:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/*轮播动画*/
+@keyframes lunbo {
+    0% {
+        background-image: url("../tongrenimg/lunbo4.jpg");
+        background-size: 36vw 42vh;
+
+    }
+
+    25% {
+        background-image: url("../tongrenimg/lunbo1.jpg");
+        background-size:36vw 42vh;
+        transform: rotateY(10deg);
+    }
+
+    50% {
+        background-image: url("../tongrenimg/lunbo2.jpg");
+        background-size: 36vw 42vh;
+        transform: rotateY(20deg);
+    }
+
+    75% {
+        background-image: url("../tongrenimg/lunbo3.jpg");
+        background-size: 36vw 42vh;
+        transform: rotateY(30deg);
+    }
+
+    100% {
+        background-image: url("../tongrenimg/lunbo4.jpg");
+        background-size: 36vw 42vh;
+        transform: rotateY(0deg);
+    }
+}
+
+.right {
+
+    position: absolute;
+    margin-left: 70vw;
+    margin-top: 80vh;
+    width: 5vw;
+    height: 10vh;
+}
+
+
+/*渐隐效果,优先级要高才能添加成功，需要变一下*/
+/*.change1 {*/
+/*    opacity: 1;*/
+/*    transition: 2s;*/
+/*}*/
+.tongren {
+    opacity: 0.1;
+}
+
+
+
+
+
+
+

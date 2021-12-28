@@ -1,0 +1,196 @@
+
+#adv {
+    width: 40%;
+    background-image: url("../image/liyue1.png");
+
+    animation: lunbo 10s linear infinite;/*后面linear是匀速，而infinite是循环动画*/
+    position: relative;
+    margin-top: 4%;
+    margin-left: 10%;
+    /*index3新增*/
+    margin-bottom: 10px;
+    float: left;
+}
+#adv ul {
+    padding-left: 43%;
+    padding-top: 333px;
+    height: 30px;
+    width: 140px;
+}
+#adv ul li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px 6px 0;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(0,0,0,0);
+    border-radius: 30px;
+    list-style-type: none;
+}
+#adv ul li  :hover  {
+    background-color: white;
+}
+
+#adv ul li:hover  div {
+    width: 820px;
+    height: 369px;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /*background-size: 820px 369px;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+#adv ul li.lunbo1:hover div{
+    position: absolute;
+    background: url("../image/news1.jpg")  ;
+    background-size: 100% 100%;
+
+}
+#adv ul li.lunbo2:hover div {
+    background-image: url("../image/news2.png");
+    background-size: 100% 100%;
+}
+#adv ul li.lunbo3:hover div {
+    background-image: url("../image/news3.jpg");
+    background-size: 100% 100%;
+}
+#adv ul li.lunbo4:hover div {
+    background-image: url("../image/news4.jpg");
+    background-size: 100% 100%;
+}
+#adv ul li span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    color:white;
+    border-radius: 30px;
+    position: relative;
+    z-index: 100;
+
+}
+/*新闻栏目部分*/
+#best-selling{
+    float: left;
+    background-color: rgba(197,83,53,0.7);
+    margin-top: 4%;
+    width: 40%;
+    color: white;
+
+}
+#best-selling .curr{
+    display: none;
+}
+#best-selling ul{
+    padding-top: 14px;
+    clear: both;
+}
+#best-selling li:before{
+
+    background-color: #a67359;
+    padding: 2px 5px;
+    color: white;
+    margin-right: 5px;
+    float: left;
+}
+#best-selling li{
+    height: 46px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 6px;
+    list-style-type: none;
+
+    border-bottom: rgba(255,255,255,0.4) solid 3px;
+}
+#best-selling a{
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+#best-selling li:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+/*新闻上方的导航条*/
+
+.news ul li a:hover{
+    border-top:none;
+    border-bottom: #a67359 1px solid;
+    opacity: 1;
+}
+.news ul li a {
+    padding: 0;
+   border-right: none;
+    opacity: 1;
+    margin-left: 0;
+    line-height: 45px;
+   background-image: none;
+    background-color: rgba(0,0,0,0);
+}
+
+.news nav{
+    background-color:rgba(197,83,53,0.3) ;
+
+}
+/*禁用超链接*/
+.news ul li a{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*轮播动画*/
+@keyframes lunbo {
+    0% {
+        background-image: url("../image/news1.jpg");
+        background-size: 100% 100%;
+    }
+    25% {
+        background-image: url("../image/news2.png");
+        background-size: 100% 100%;
+    }
+    50% {
+        background-image: url("../image/news3.jpg");
+        background-size: 100% 100%;
+    }
+    75% {
+        background-image: url("../image/news4.jpg");
+        background-size: 100% 100%;
+    }
+    100% {
+        background-image: url("../image/news1.jpg");
+        /*background-size: 820px 369px;*/
+        background-size: 100% 100%;
+    }
+}

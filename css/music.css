@@ -1,0 +1,136 @@
+.wrapper{
+
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw ;
+    grid-template-rows: 10vw 10vw ;
+    grid-row-gap: 10vh;
+    grid-column-gap: 10vw;
+    -ms-grid-row-align: center;
+    position: absolute;
+    margin: 25vh 25vw;
+}
+.wrapper div{
+    background-size: 12vw 12vw;
+    box-shadow: white 0 0 50px;
+}
+.wrapper div{
+    background-image: url("../music/coverall(1).png");
+    transform-style: preserve-3d;
+    /*为父元素加上3d，以便子元素旋转*/
+    /*增加立体感*/
+    perspective: 300px;
+    /*鼠标放上去会有小手*/
+    cursor: pointer;
+}
+
+.wrapper div img{
+
+    background-size: 10vw 10vw;
+}
+body {
+    background-image: url("../image/ysmusic.png");
+    background-size: 100vw;
+
+}
+.wrapper div img:hover{
+
+
+    /*第三个是贝塞尔曲线，控制播放的各种速度*/
+    animation: rotate-reverse 1.2s cubic-bezier(0.66,-0.47,0.33,1.5) forwards;
+
+}
+
+/*下拉菜单样式*/
+.wrapper div ul li{
+    list-style-type: none;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+.wrapper div ul {
+    width: 10vw;
+    height: 10vw;
+
+}
+.wrapper div ul li a{
+    padding-left: 0;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+.wrapper div ul li a:hover {
+    color: gold;
+    font-size: 26px;
+    transition: 2s;
+    opacity: 1;
+
+}
+/*左侧*/
+#left {
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 0;
+}
+#left ul li {
+    height: 45px;
+    color: white;
+    line-height: 40px;
+    font-size: 1vw;
+    width: 20vw;
+    margin-top: 4vh;
+    background: linear-gradient(30deg,rgba(255,255,255,0.5),rgba(0,0,0,0.2));
+
+
+}
+#left ul li:hover {
+    background: linear-gradient(30deg,rgba(255,255,255,0.8),rgba(0,0,0,0.4));
+    color: gold;
+    transition: 2s;
+    animation: rotate-reverse1 forwards 1s;
+
+}
+/*按钮透明，悬浮后显示*/
+button {
+    opacity: 0;
+}
+#left ul li:hover button{
+    opacity: 1;
+    transition: 1s;
+}
+#left ul li a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: white;
+    margin-left: 4vw;
+}
+#left ul li a:hover{
+    text-shadow: greenyellow 0 0 50px;
+    color: yellow;
+    transition: 2s;
+}
+
+/*定义一下翻转动画*/
+@keyframes rotate-reverse {
+    0% {
+        transform: rotateY(0);
+
+    }
+    100% {
+        transform: rotateY(95deg);
+        box-shadow: gold 0 0 60px;
+
+    }
+
+}
+@keyframes rotate-reverse1 {
+    0% {
+        transform: rotateY(10deg);
+
+    }
+    100% {
+        transform: rotateZ(5deg);
+        box-shadow: gold 0 0 60px;
+    }
+
+}

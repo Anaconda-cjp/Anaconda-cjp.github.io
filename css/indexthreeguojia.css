@@ -1,0 +1,48 @@
+#mengdefooter, #liyuefooter, #daoqifooter{
+    opacity: 0.6;
+}
+#liyuefooter {
+    background-image: url("../image/liyuefooter.jpg");
+}
+#daoqifooter {
+    background-image: url("../image/daoqifooter.jpg");
+}
+#mengdefooter img{
+    margin-left: 45%;
+    opacity: 0.1;
+}
+#liyuefooter img{
+    margin-left: 45%;
+    opacity: 0.1;
+}
+#daoqifooter img{
+    margin-left: 45%;
+    opacity: 0.1;
+}
+#mengdefooter:hover img{
+    opacity: 1;
+    transition: 1s;
+}
+#liyuefooter:hover img{
+    opacity: 1;
+    transition: 1s;
+}
+#daoqifooter:hover img{
+    opacity: 1;
+    transition: 1s;
+}
+#liyuefooter:hover{
+    border:white 5px solid;
+    transition: 1s;
+    opacity: 1;
+}
+#mengdefooter:hover{
+    border:white 5px solid;
+    transition: 1s;
+    opacity: 1;
+}
+#daoqifooter:hover{
+    border:white 5px solid;
+    transition: 1s;
+    opacity: 1;
+}
