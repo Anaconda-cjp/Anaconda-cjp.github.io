@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+
+</head>
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="../css/daohangtiao.css">
+<body>
+<!--背景音乐-->
+<audio id="bgmusic" src="../music/mengdebg2.mp3" autoplay style="margin-top: 0;"></audio>
+<!--注意细节，这里background-size保证图片放大-->
+<button id="btn1" title="播放/停止" onclick="playPause()" style="background: url('../image/play_start.png') center no-repeat ;width: 50px;height:50px;border: none;
+margin-left: 2vw;margin-top: 80vh;position: fixed;background-size: 100% 100%;z-index: 11"></button>
+<script>
+	var v=document.getElementById("bgmusic");
+	var b=document.getElementById("btn1")
+	function playPause(){
+		if(v.paused){
+			v.play();
+			b.style.background="url('../image/play_start.png')";
+			b.style.backgroundSize="100% 100%";
+		}
+		else{
+			v.pause()//这里注意了,一般script代码放在对应事件后面比较好,防止事件还没加载就读了代码！！！！！！！！比如这里放开头就无效！
+			b.style.background="url('../image/play_close.png')";
+			b.style.backgroundSize="100% 100%";
+		}
+	}
+</script>
+
+<!--导航条-->
+<!--z-index是防止被轮播图挡住导航条-->
+<header style="position: fixed;z-index: 10">
+	<nav>
+		<ul>
+			<li><a id="log" href="https://ys.mihoyo.com/main/" title="点我前往官方查看更多信息!" target="_blank">&nbsp;</a></li>
+			<li><a href="indexnew4.html" title="首页" target="_blank">首页</a></li>
+			<li><a href="page2new2.html" title="世界" target="_blank">世界</a></li>
+			<li><a href="juese3.html" title="角色" target="_blank">角色</a></li>
+			<li><a href="erchuang1.html" title="二创" target="_blank">二创</a></li>
+			<li><a href="music.html" title="音乐" target="_blank">音乐</a></li>
+		</ul>
+	</nav>
+</header>
+<div style="padding-top: 100px;text-align: center">
+ 	<h1><strong><font color="#fff">果酒湖</font></strong></h1>
+</div>
+<div class="table1">
+	<img src="../image/guojiuhu.png" style="width: 960px;height: 540px;padding-top: 0">
+	<div class="text1">
+		<p>环绕蒙德城的天然淡水湖泊。
+			</p>
+		<p>宽广的湖面和粼粼的波光历经千百年不变，水澈见底，入口清冽甘甜。</p>
+		<p>正是这样的水源成就了蒙德美酒的盛名，也让果酒湖成为了蒙德的重要标志之一。</p>
+
+	</div>
+	<hr>
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">鹰翔海滩</font></strong></h1>
+	</div>
+	<img src="../image/yingxianghaitan.png" style="width: 960px;height: 600px;">
+	<div class="text1">
+		<p>从风起地往东延伸至海边，鹰翔海滩与誓言岬共同围成三面环海的陆地，环绕着蒙德东面的海湾。
+			</p>
+		<p>鉴于海岸线较长且地处浅海位置，经常有蒙德市民前来游玩。</p>
+		<p>偶尔可见苍鹰翱翔于碧浪白沙之上。</p>
+
+	</div>
+	<hr>
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">誓言岬</font></strong></h1>
+	</div>
+	<img src="../image/shiyanxia.png" style="width: 960px;height: 600px;">
+	<div class="text1">
+	<p>位于蒙德城东南角、风啸山坡边缘的海岬。
+		</p>
+		<p>传说曾有一对恋人在此许下誓言，并留下一个感人至深的故事。至今此地仍被认为是恋人的好去处。</p>
+		<p>除了观看海上日出日落外，由于地势的落差，在这里也可以轻松望到海湾对面的风起地。</p>
+
+	</div>
+	<hr>
+
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">晨曦酒庄</font></strong></h1>
+	</div>
+	<img src="image/cxjz.png" style="width: 960px;height: 600px;">
+	<div class="text1">
+		<p>位于蒙德城西南方的晨曦酒庄，代代传承着蒙德传统的酿酒工艺。</p>
+		<p>这里种植着大面积的葡萄等作物，用它们酿造出的各类酒品风靡整个提瓦特大陆。</p>
+		<p>	每年晨曦酒庄产出的酒品，部分运往蒙德城内销售，另一部分则通过城南的商道销往各地。</p>
+
+	</div>
+	<hr>
+
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">清泉镇</font></strong></h1>
+	</div>
+	<img src="image/qqz.png" style="width: 960px;height: 600px;">
+	<div class="text1">
+		<p>蒙德地区南部的悠闲小镇，与蒙德主城隔湖相望。</p>
+			<p>此地居民多以打猎为生，常年为蒙德城内的各大餐馆提供优质鲜肉。</p>
+			<p>清泉镇以其小镇情调和乡间野趣，吸引着前来观光的游客。如果在旅途中有幸遇到某位擅长肉类料理的大厨，或许还能体验到一段别样的惊喜。</p>
+
+	</div>
+	<hr>
+
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">千风神殿</font></strong></h1>
+	</div>
+	<img src="image/qfsd.png" style="width: 960px;height: 600px;">
+	<div class="text1">
+		<p>地处蒙德东北部的神殿遗址群。</p>
+			<p>据人们传言，千百年前这里曾是供奉古代风神的神庙，如今被漫长的时光侵蚀，只剩残存的建筑废墟。</p>
+		<p>一些石质立柱上还依稀可辨认出曾经华丽雕刻的精妙曲线。</p>
+			<p>所纪念的象征早已被遗忘的石雕上雕刻着一句古老的格言，「风带来故事的种子，时间使之发芽。」。</p>
+
+	</div>
+
+
+</div>
+
+<script src="../js/mousemove.js"></script>
+</body>
+<footer style="margin-top: 100px">
+	<nav>
+		<ul>
+			<li><a href="https://weibo.com/ysmihoyo" title="微博" target="_blank" style="margin-left: 25%"><img src="image/新浪微博1..png" alt=""></a></li>
+			<li><a href="https://uploadstatic.mihoyo.com/contentweb/20200611/2020061111554428546.png" title="微信" target="_blank"><img src="image/微信%20(2).png" alt=""></a></li>
+			<li><a href="https://connect.qq.com/widget/shareqq/index.html?url=https://ys.mihoyo.com&title=%E4%B8%80%E8%B5%B7%E5%8E%BB%E6%96%B0%E5%A4%A9%E5%9C%B0%E5%86%92%E9%99%A9%E5%90%A7%EF%BC%81%E7%B1%B3%E5%93%88%E6%B8%B8%E6%96%B0%E4%BD%9C%E3%80%8A%E5%8E%9F%E7%A5%9E%E3%80%8B%E6%B5%8B%E8%AF%95%E6%8B%9B%E5%8B%9F%E5%BC%80%E5%90%AF%EF%BC%8C%E5%9C%A8%E5%AE%8C%E5%85%A8%E6%9C%AA%E7%9F%A5%E7%9A%84%E5%B7%A8%E5%A4%A7%E4%B8%96%E7%95%8C%EF%BC%8C%E8%B8%8F%E4%B8%8A%E5%8F%AA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%97%85%E7%A8%8B%E3%80%82&pics=http://uploadstatic.mihoyo.com/contentweb/20190605/2019060514593087354.jpg" title="分享" target="_blank"><img src="image/分享方式.png" alt=""></a></li>
+			<li><a href="https://shang.qq.com/wpa/qunwpa?idkey=36fc0062c930578950afe36e95ca94fa76ab74b2f5c76c40b2bc94aa14c6fb15" title="qq" target="_blank"><img src="image/qq.png" alt=""></a></li>
+
+		</ul>
+	</nav>
+	<img src="../image/footer.png" alt="">
+</footer>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="../css/daohangtiao.css">
+</head>
+
+<body>
+<!--背景音乐-->
+<audio id="bgmusic" src="../music/liyuebg2.mp3" autoplay style="margin-top: 0;"></audio>
+<!--注意细节，这里background-size保证图片放大-->
+<button id="btn1" title="播放/停止" onclick="playPause()" style="background: url('../image/play_start.png') center no-repeat ;width: 50px;height:50px;border: none;
+margin-left: 2vw;margin-top: 80vh;position: fixed;background-size: 100% 100%;z-index: 11"></button>
+<script>
+	var v=document.getElementById("bgmusic");
+	var b=document.getElementById("btn1")
+	function playPause(){
+		if(v.paused){
+			v.play();
+			b.style.background="url('../image/play_start.png')";
+			b.style.backgroundSize="100% 100%";
+		}
+		else{
+			v.pause()//这里注意了,一般script代码放在对应事件后面比较好,防止事件还没加载就读了代码！！！！！！！！比如这里放开头就无效！
+			b.style.background="url('../image/play_close.png')";
+			b.style.backgroundSize="100% 100%";
+		}
+	}
+</script>
+
+
+<header style="position: fixed;z-index: 10">
+	<nav>
+		<ul>
+			<li><a id="log" href="https://ys.mihoyo.com/main/" title="点我前往官方查看更多信息!" target="_blank">&nbsp;</a></li>
+			<li><a href="indexnew4.html" title="首页" target="_blank">首页</a></li>
+			<li><a href="page2new2.html" title="世界" target="_blank">世界</a></li>
+			<li><a href="juese3.html" title="角色" target="_blank">角色</a></li>
+			<li><a href="erchuang1.html" title="二创" target="_blank">二创</a></li>
+			<li><a href="music.html" title="音乐" target="_blank">音乐</a></li>
+		</ul>
+	</nav>
+</header>
+<div style="text-align: center;padding-top: 100px;">
+ 	<h1><strong><font color="#fff">港口</font></strong></h1>
+</div>
+<div class="table1">
+	<img src="image/gangkou.png" style="width: 960px;height: 476px;">
+	<div class="text1">
+		<p>港口的建立为璃月的海上贸易打下了最初的基础。</p>
+		<p>作为提瓦特大陆上最大的集贸港口，其货物吞吐量也绝非一般港口可比拟。</p>
+		<p>每年海灯节时，在港口处可以看到海上万千宵灯飞入夜幕，是到访璃月不可错过的奇景。</p>
+	</div>
+	<hr>
+
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">天衡山</font></strong></h1>
+	</div>
+	<img src="image/tianhengshan.png" style="width: 960px;height: 580px;">
+	<div class="text1">
+		<p>璃月港西边的山脉，也是抵御外敌的一道天然保护屏障。</p>
+		<p>有记载以来，作为璃月的壁垒经历了数不清的大小战争。</p>
+		<p>因此也可以看到不少古城墙、堡垒和防御工事的遗迹。</p>
+		<p>传说中璃月人最早的采矿作业亦在此处进行。</p>
+	</div>
+	<hr>
+
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">荻花洲</font></strong></h1>
+	</div>
+	<img src="image/dihuazhou.png" style="width: 960px;height: 540px;">
+	<div class="text1">
+	<p>荻花洲得名于浅滩中大面积生长的荻花，是璃月北部的一处天然浅滩湿地。</p>
+	<p>水泽遍布、河网交错纵横，由多样的动植物群落组成了丰富的生态系统，也构成了来往旅客眼中绝佳的景观。 </p>
+	<p>同时，荻花洲也是陆路从蒙德通往璃月的必经要道，因此时常有商队在此歇脚，</p>
+	<p>建在河滩深处的望舒客栈是这里的标志性建筑。</p>
+	</div>
+	<hr>
+
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">望舒客栈</font></strong></h1>
+	</div>
+	<img src="image/wshukezhan.png" style="width: 960px;height: 540px;">
+	<div class="text1">
+		<p>荻花洲的地标，修建在一座巨大岩柱上的客栈。</p>
+		<p>来歇息的大多是途径此处的商贩，客栈也因此提供了直接贸易和摆摊的场所。 </p>
+		<p>高层位置视野极佳，天气晴朗时可以直接看到远处的轻策山和绝云间。</p>
+		<p>坊间有传说道，在高耸的客栈中，传承着某种神秘的使命。</p>
+		<p>但传言止步于此，从未有人能证实它的真伪。</p>
+	</div>
+	<hr>
+
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">轻策庄</font></strong></h1>
+	</div>
+	<img src="image/qingcezhuang.png" style="width: 960px;height: 540px;">
+	<div class="text1">
+		<p>坐落于璃月最北部，隐藏在山丘与竹林间的村落。</p>
+		<p>白云缭绕的山谷间点缀着鳞次栉比的半月形梯田，山风吹拂时可以看见一层层多彩的波浪。 </p>
+		<p>在这个宛如世外桃源的地方，轻策庄的村民过着质朴而又充实的生活。</p>
+	</div>
+	<hr>
+
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">绝云间</font></strong></h1>
+	</div>
+	<img src="image/wshukezhan.png" style="width: 960px;height: 540px;">
+	<div class="text1">
+		<p>璃月西北部常年云雾缭绕、渺无人烟的峻岭。</p>
+		<p>山间有奇景，但由于地势复杂、山路陡峭而鲜有人迹，传闻中是守护璃月的仙人们的隐居之处。 </p>
+		<p>也因此受到部分求仙祈福之人的追捧。</p>
+		<p>鉴于其间的凶险不宜外人靠近，最好还是站在望舒客栈远观吧。</p>
+	</div>
+</div>
+
+<!-- //页码跳转
+<div align="center">
+	<p><a href="../right.html" class="btn btn-default" role="button" target="rightframe">Return</a></p>
+</div> -->
+<script src="../js/mousemove.js"></script>
+</body>
+<footer style="margin-top: 100px">
+	<nav>
+		<ul>
+			<li><a href="https://weibo.com/ysmihoyo" title="微博" target="_blank" style="margin-left: 25%"><img src="image/新浪微博1..png" alt=""></a></li>
+			<li><a href="https://uploadstatic.mihoyo.com/contentweb/20200611/2020061111554428546.png" title="微信" target="_blank"><img src="image/微信%20(2).png" alt=""></a></li>
+			<li><a href="https://connect.qq.com/widget/shareqq/index.html?url=https://ys.mihoyo.com&title=%E4%B8%80%E8%B5%B7%E5%8E%BB%E6%96%B0%E5%A4%A9%E5%9C%B0%E5%86%92%E9%99%A9%E5%90%A7%EF%BC%81%E7%B1%B3%E5%93%88%E6%B8%B8%E6%96%B0%E4%BD%9C%E3%80%8A%E5%8E%9F%E7%A5%9E%E3%80%8B%E6%B5%8B%E8%AF%95%E6%8B%9B%E5%8B%9F%E5%BC%80%E5%90%AF%EF%BC%8C%E5%9C%A8%E5%AE%8C%E5%85%A8%E6%9C%AA%E7%9F%A5%E7%9A%84%E5%B7%A8%E5%A4%A7%E4%B8%96%E7%95%8C%EF%BC%8C%E8%B8%8F%E4%B8%8A%E5%8F%AA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%97%85%E7%A8%8B%E3%80%82&pics=http://uploadstatic.mihoyo.com/contentweb/20190605/2019060514593087354.jpg" title="分享" target="_blank"><img src="image/分享方式.png" alt=""></a></li>
+			<li><a href="https://shang.qq.com/wpa/qunwpa?idkey=36fc0062c930578950afe36e95ca94fa76ab74b2f5c76c40b2bc94aa14c6fb15" title="qq" target="_blank"><img src="image/qq.png" alt=""></a></li>
+
+		</ul>
+	</nav>
+	<img src="../image/footer.png" alt="">
+</footer>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="../css/daohangtiao.css">
+</head>
+
+<body>
+<audio id="bgmusic" src="../music/daoqibg2.mp3" autoplay style="margin-top: 0;"></audio>
+<!--注意细节，这里background-size保证图片放大-->
+<button id="btn1" title="播放/停止" onclick="playPause()" style="background: url('../image/play_start.png') center no-repeat ;width: 50px;height:50px;border: none;
+margin-left: 2vw;margin-top: 80vh;position: fixed;background-size: 100% 100%;z-index: 11"></button>
+<script>
+	var v=document.getElementById("bgmusic");
+	var b=document.getElementById("btn1")
+	function playPause(){
+		if(v.paused){
+			v.play();
+			b.style.background="url('../image/play_start.png')";
+			b.style.backgroundSize="100% 100%";
+		}
+		else{
+			v.pause()//这里注意了,一般script代码放在对应事件后面比较好,防止事件还没加载就读了代码！！！！！！！！比如这里放开头就无效！
+			b.style.background="url('../image/play_close.png')";
+			b.style.backgroundSize="100% 100%";
+		}
+	}
+</script>
+
+
+<header style="position: fixed;z-index: 10">
+	<nav>
+		<ul>
+			<li><a id="log" href="https://ys.mihoyo.com/main/" title="点我前往官方查看更多信息!" target="_blank">&nbsp;</a></li>
+			<li><a href="indexnew4.html" title="首页" target="_blank">首页</a></li>
+			<li><a href="page2new2.html" title="世界" target="_blank">世界</a></li>
+			<li><a href="juese3.html" title="角色" target="_blank">角色</a></li>
+			<li><a href="erchuang1.html" title="二创" target="_blank">二创</a></li>
+			<li><a href="music.html" title="音乐" target="_blank">音乐</a></li>
+		</ul>
+	</nav>
+</header>
+<div  style="text-align: center;padding-top: 100px">
+ 	<h1><strong><font color="#fff">离岛</font></strong></h1>
+</div>
+<div class="table1" >
+	<img src="image/lidao.png" style="width: 960px;height: 540px;">
+	<div class="text1">
+		<p>在锁国令期间，若想真正踏上鸣神的领土，就必须先通过离岛这道关卡。</p>
+		<p>离岛由勘定奉行管辖，人们必须持有各类凭证才可出入此地，而这些凭证往往需要复杂的手续和一些特殊的关系才能办下。</p>
+		<p>如果不能顺利拿到凭证的话，就只能在离岛短暂驻足，与滞留此地的其他外人一起，略观红枫青瓦与萧条渔村的一景了。</p>
+
+	</div>
+	<hr>
+
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">稻妻城</font></strong></h1>
+	</div>
+	<img src="image/daoqicheng.png" style="width: 960px;height: 540px;">
+	<div class="text1">
+		<p>稻妻最为繁华热闹的城区，稻妻人大多居住生活在此。</p>
+		<p>从花见坂到町街，可顺着地势一路向上，游览当地传统的老店，品尝稻妻特色的美食。</p>
+		<p>天领奉行府也位于城中，管理民众治安与幕府军备等事务。</p>
+		<p>在稻妻城至高之处，雷电将军高居天守，凌于众生之上。</p>
+
+	</div>
+	<hr>
+
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">镇守之森</font></strong></h1>
+	</div>
+	<img src="image/zhengshouzhisen.png" style="width: 960px;height: 540px;">
+	<div class="text1">
+	<p>位于影向山下，静谧幽玄的森林。</p>
+	<p>随处可见的狸猫石像、隐于林间的错落鸟居、暗藏深处的遗落神龛…</p>
+	<p>如同涓涓溪流，讲述着流淌在时光中的传说。</p>
+	<p>听说行走在镇守之森中，还能偶遇对人作怪的神秘生灵… </p>
+	</div>
+	<hr>
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">鸣神大社</font></strong></h1>
+	</div>
+	<img src="image/mingsds.png" style="width: 960px;height: 540px;">
+	<div class="text1">
+		<p>稻妻最大的神社，位于影向山顶，供奉着御建鸣神主尊大御所大人。</p>
+		<p>心怀愿望的人，可以一步步脚踏实地地登上山顶；或者若是被雷元素垂怜，还可乘雷极一路向上，</p>
+		<p>直达被巨大的神樱树所笼罩的神社。</p>
+		<p>神樱常开不败，一如鸣神永恒。</p>
+		<p>穿过重重鸟居，找巫女求上一签，祈求鸣神的保佑吧。</p>
+	</div>
+	<hr>
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">神无冢.踏鞴砂</font></strong></h1>
+	</div>
+	<img src="image/tabeisha.png" style="width: 960px;height: 540px;">
+	<div class="text1">
+		<p>传说中，「神无冢」意为「神不在的山丘」，直到现在也是幕府与珊瑚宫之间的争议之地。</p>
+		<p>神无冢地势险峻，岩壁高悬。</p>
+		<p>在层岩叠嶂之中，坐落着稻妻最大的冶炼设施「御影炉心」，稻妻锻刀铸剑的特殊材料玉钢即产于此地。</p>
+	</div>
+	<hr>
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">九条阵屋</font></strong></h1>
+	</div>
+	<img src="image/jiutiaozhenwu.png" style="width: 960px;height: 540px;">
+	<div class="text1">
+		<p>幕府军营在神无冢的驻扎之处。</p>
+		<p>信仰雷电将军的鸣神子民，与信仰海祇大御神的珊瑚宫，双方之间存在着永远无法化解的矛盾。</p>
+		<p>而这一矛盾，因眼狩令的施行更加激化。</p>
+		<p>为迎战珊瑚宫的叛军，天领奉行率幕府军驻扎于此。</p>
+		<p>与珊瑚宫军相比，幕府军人员充足，军备精良，制式统一，似是胜券在握。</p>
+	</div>
+	<hr>
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">无想刃狭间</font></strong></h1>
+	</div>
+	<img src="image/wuxiangrenxiajian.png" style="width: 960px;height: 540px;">
+	<div class="text1">
+		<p>八酝岛的东部，被一条狭长壮阔的裂谷笔直切断。</p>
+		<p>此番壮景并非自然天成，而是雷神斩落巨蛇魔神之时造就的奇观，因雷神武艺极致「无想的一刀」命名。</p>
+		<p>直至今日，巨蛇的遗骨仍存于八酝岛各处，因魔神残骸而起的「祟神」也依旧隐隐而动…</p>
+	</div>
+	<hr>
+	<div class="page-header" style="text-align: center;">
+		<h1><strong><font color="#fff">蛇神之首</font></strong></h1>
+	</div>
+	<img src="image/sheshenzhishou.png" style="width: 960px;height: 540px;">
+	<div class="text1">
+		<p>被雷神「无想的一刀」斩杀的巨蛇魔神，现今只剩下枯白的遗骨。</p>
+		<p>虽然仍在向天昂起不屈的头颅，但魔神已逝，「海祇大御神」的名号也不再响亮。</p>
+		<p>魔神即使死去也会留下强大的力量。受「祟神」的影响，八酝岛人迹罕至，只有风雨和降雷还在洗刷着历史的残骸。</p>
+	</div>
+</div>
+<script src="../js/mousemove.js"></script>
+</body>
+<footer style="margin-top: 100px">
+	<nav>
+		<ul>
+			<li><a href="https://weibo.com/ysmihoyo" title="微博" target="_blank" style="margin-left: 25%"><img src="image/新浪微博1..png" alt=""></a></li>
+			<li><a href="https://uploadstatic.mihoyo.com/contentweb/20200611/2020061111554428546.png" title="微信" target="_blank"><img src="image/微信%20(2).png" alt=""></a></li>
+			<li><a href="https://connect.qq.com/widget/shareqq/index.html?url=https://ys.mihoyo.com&title=%E4%B8%80%E8%B5%B7%E5%8E%BB%E6%96%B0%E5%A4%A9%E5%9C%B0%E5%86%92%E9%99%A9%E5%90%A7%EF%BC%81%E7%B1%B3%E5%93%88%E6%B8%B8%E6%96%B0%E4%BD%9C%E3%80%8A%E5%8E%9F%E7%A5%9E%E3%80%8B%E6%B5%8B%E8%AF%95%E6%8B%9B%E5%8B%9F%E5%BC%80%E5%90%AF%EF%BC%8C%E5%9C%A8%E5%AE%8C%E5%85%A8%E6%9C%AA%E7%9F%A5%E7%9A%84%E5%B7%A8%E5%A4%A7%E4%B8%96%E7%95%8C%EF%BC%8C%E8%B8%8F%E4%B8%8A%E5%8F%AA%E5%B1%9E%E4%BA%8E%E4%BD%A0%E7%9A%84%E6%97%85%E7%A8%8B%E3%80%82&pics=http://uploadstatic.mihoyo.com/contentweb/20190605/2019060514593087354.jpg" title="分享" target="_blank"><img src="image/分享方式.png" alt=""></a></li>
+			<li><a href="https://shang.qq.com/wpa/qunwpa?idkey=36fc0062c930578950afe36e95ca94fa76ab74b2f5c76c40b2bc94aa14c6fb15" title="qq" target="_blank"><img src="image/qq.png" alt=""></a></li>
+
+		</ul>
+	</nav>
+	<img src="../image/footer.png" alt="">
+</footer>
+</html>
