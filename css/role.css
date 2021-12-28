@@ -1,0 +1,133 @@
+body {
+    background-image: url("../image_juese/daoqibg.jpg");
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    /*background-attachment: fixed;*/
+}
+.select_div {
+    width: 100vw;
+    /*屏幕适应性更好，比百分比好*/
+    height: 20vh;
+    line-height: 20vh;
+    background-color: rgba(255,255,255,0.2);
+    position: absolute;
+    top:80vh;
+    text-align: center;
+
+}
+
+footer {
+    position: absolute;
+    top:100vh;
+}
+.arrow_left,.arrow_right{
+    width: 50px;
+    height: 55px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 20vh;
+}
+.touxiang {
+    width: 15vh;
+    height: 17vh;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+
+    background-color: rgba(0,0,0,0.5);
+    margin: 0 20px;
+    /*防止晃动*/
+    box-sizing: border-box;
+}
+/*角色介绍部分*/
+.jueseintroduce {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 30vh;
+    left: 40vh;
+    z-index: 3;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 25px;
+    padding: 30px;
+
+}
+
+.juesexinxi {
+    width: 50vh;
+    height: 60vh;
+    position: absolute;
+    left: 15vw;
+
+}
+
+/*调一下图像大小*/
+.juesexinxi img{
+    height: 100vh;
+}
+
+.touxiang:hover {
+    border: 2px solid white;
+    box-shadow: 0px 0px 50px plum;
+}
+/*鼠标点击时的样式*/
+.selected {
+    border: 2px solid white;
+    box-shadow: 0px 0px 50px plum;
+}
+.role_img {
+    opacity: 0.1;
+}
+
+.nav-left {
+    height: 100vh;
+    z-index: 11;
+
+}
+.nav-left ul{
+    margin-left: 5vw;
+    position: absolute;
+    margin-top: 0vh;
+    border-left: 6px solid rgba(255,255,255,0.3);
+    list-style-type: none;
+}
+.nav-left ul li{
+    margin-top: 20vh;
+    z-index: 11;
+    position: relative;
+}
+.nav-left ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+.nav-left ul li:hover{
+    background-color: rgba(255,255,255,0.5);
+    transition: 1s;
+}
+/*渐隐效果*/
+.change1 {
+    opacity: 1;
+    transition: 2s;
+}
+/*角色名字*/
+.role_name {
+    width: 400px;
+    height: 110px;
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    text-align: center;
+    line-height: 110px;
+    font-size: 60px;
+    padding: 30px;
+}
+/*设置body轮换速度*/
+body {
+    transition: 2s;
+}
